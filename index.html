@@ -1,0 +1,95 @@
+<html>
+
+    <head>
+
+        <title>JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="script.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <header>
+                <h1>Ваш любимый сайт с фото</h1>
+        </header>
+
+        <nav class ="main-nav">
+                <ul>
+                    <li><a href="#" class = "active" data-category="all">Главная</a></li>
+                    <li><a href="#" data-category="nature">Природа </a></li>
+                    <li><a href="#" data-category="city">Города</a></li>
+                    <li><a href="#" data-category="people">Люди</a></li>
+                </ul>
+        </nav>
+
+        <main>
+            <div class="photos">
+                <div class="item" data-category="people">
+                <img src="п1.jpg" alt="Персон 1" loading="lazy">
+                </div>
+                <div class="item" data-category="people">
+                <img src="п2.jpg" alt="Персон 2" loading="lazy">
+                </div>
+                <div class="item" data-category="people">
+                <img src="п3.jpg" alt="Персон 3" loading="lazy">
+                </div>
+                <div class="item" data-category="people">
+                <img src="п4.jpg" alt="Персон 4" loading="lazy">
+                </div>
+                <div class="item" data-category="people">
+                <img src="п5.jpg" alt="Персон 5" loading="lazy">
+                </div>
+                <div class="item" data-category="nature">
+                <img src="пр1.jpg" alt="Природа 1" loading="lazy">
+                </div>
+                <div class="item" data-category="nature">
+                <img src="пр2.avif" alt="Природа 2" loading="lazy">
+                </div>
+                <div class="item" data-category="nature">
+                <img src="пр3.jpg" alt="Природа 3" loading="lazy">
+                </div>
+                <div class="item" data-category="nature">
+                <img src="пр4.avif" alt=" Природа 4" loading="lazy">
+                </div>
+                <div class="item" data-category="city">
+                <img src="с1.jpg" alt="Сити 1" loading="lazy">
+                </div>
+                <div class="item" data-category="city">
+                <img src="с2.jpg" alt="Сити 2" loading="lazy">
+                </div>
+                <div class="item" data-category="city">
+                <img src="с3.jpg" alt="Сити 3" loading="lazy">
+                </div>
+                <div class="item" data-category="city">
+                <img src="с4.jpg" alt="Сити 4" loading="lazy">
+                </div>
+            </div>
+
+            <!--модальное окно-->
+
+            <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+                <div class="modal-content">
+                    <span class="modal-close" tabindex="0" aria-label="Закрыть модальное окно">×</span>
+                    
+                    <div id="modal-body">
+                        <img id="modal-img" src="" alt="">
+                    </div>
+                    <div class="modal-navigation">
+                        <button id="prev-btn" aria-label="Предыдущее изображение">←</button>
+                        <button id="next-btn" aria-label="Следущее изображение">→</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est dui, maximus ac lacus eu, dignissim tincidunt risus. Fusce interdum vestibulum consectetur. Nulla ornare, turpis a tristique bibendum, nibh enim vestibulum tortor, eget porttitor quam justo non lacus. In hac habitasse platea dictumst. Nam id arcu a nisi finibus ullamcorper eget pellentesque mi. Vivamus tempor, tortor a tempus feugiat, nibh ipsum vulputate libero, sed ultricies libero ex pharetra ligula. Quisque semper, elit imperdiet placerat viverra, nunc tortor imperdiet ante, eget ullamcorper lorem nibh nec ligula. </p>
+        </footer>
+
+    </body>
+
+</html>
